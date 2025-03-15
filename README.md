@@ -1,6 +1,6 @@
 # 8th-Web
 
-# 💚 UMC MJU 8th_Web - 인문&자연 통합
+# 💚 UMC MJU 8th_Web - 인문
 
 [UMC MJU 8th를 위한 깃허브 사용법 및 규칙](https://www.notion.so/makeus-challenge/UMC-MJU-GITHUB-RULE-1a5b57f4596b817e9ad8e8d8821c6b86?pvs=4)
 
