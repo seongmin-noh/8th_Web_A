@@ -2,31 +2,33 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TODO List</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="todo-container"> <!--전체 감싸는 박스-->
         <header>
-            <h1>YONG TODO</h1>
-            <form id="todo-form">
-                <input type="text" placeholder="할 일 입력" name="todo"> 
-                <button type="submit">할 일 추가</button>                
+            <h1 class="todo-container__header">YONG TODO</h1>
+            <form class="todo-container__form">
+                <input class="todo-container__input" type="text" placeholder="할 일 입력" name="todo"> 
+                <button class="todo-container__button" type="submit">할 일 추가</button>                
             </form>
         </header>   
+
         <main>
-            <section>
-                <h2>할 일</h2>
-                <ul id="todo-list">
-                    
-                </ul>
+            <section class="render-container__section">
+                <h2 class="render-container__title">할 일</h2>
+                <ul class="render-container__item"></ul>
+                <button class="render-container__item-button"></button>
             </section>
 
-            <section>
-                <h2>완료</h2>
-                <ul id="todo-done">
-
-
-                </ul>
+            <section class="render-container__section">
+                <h2 class="render-container__title">완료</h2>
+                <ul class="render-container__item"></ul>
+                <button class="render-container__item-button"></button>
             </section>
         </main>   
+
     </body>
 </html>
