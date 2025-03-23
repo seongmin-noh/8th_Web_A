@@ -9,7 +9,7 @@
     <body>
         <div class="todo-container"> <!--전체 감싸는 박스-->
         <header>
-            <h1 class="todo-container__header">YONG TODO</h1>
+            <h2 class="todo-container__header">YONG TODO</h2>
             <form class="todo-container__form">
                 <input class="todo-container__input" type="text" placeholder="할 일 입력" name="todo"> 
                 <button class="todo-container__button" type="submit">할 일 추가</button>                
@@ -18,17 +18,17 @@
 
         <main>
             <section class="render-container__section">
-                <h2 class="render-container__title">할 일</h2>
-                <ul class="render-container__item"></ul>
-                <button class="render-container__item-button"></button>
+                <h3 class="render-container__title">할 일</h3>
+                <ul id="todo-list" class="render-container__item"></ul>
+             <!--   <button class="render-container__item-button"></button> -->
             </section>
 
             <section class="render-container__section">
-                <h2 class="render-container__title">완료</h2>
-                <ul class="render-container__item"></ul>
-                <button class="render-container__item-button"></button>
+                <h3 class="render-container__title">완료</h3>
+                <ul id="done-list" class="render-container__item"></ul>
+             <!--  <button class="render-container__item-button"></button> -->
             </section>
         </main>   
-
+    </div>
     </body>
 </html>
