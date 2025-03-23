@@ -1,4 +1,4 @@
-const form = document.getElementById("todo-form");
+const form = document.getElementById("todo-form") as HTMLInputElement;
 // as HTMLInputElement 써서 명시적 타입 단언+ null 방지(안 쓰면 에러났음)
 const input = document.getElementById("form-input") as HTMLInputElement;
 const toDoList = document.getElementById("todo-list");
@@ -13,7 +13,7 @@ const list = document.createElement("li");
 const doneBtn = document.createElement("button");
 const deleteBtn = document.createElement("button");
 
-doneBtn.textContent = "완료"; //문자 설정정
+doneBtn.textContent = "완료"; //문자 설정
 doneBtn.className = "render-container__item-done-button"; //css 클래스 부여
 
 deleteBtn.textContent = "삭제";
@@ -22,3 +22,15 @@ deleteBtn.className = "render-container__item-delete-button"
 list.textContent = input.value;
 list.appendChild(doneBtn);
 list.appendChild(deleteBtn);
+
+form.addEventListener("submit",(e)=>{ //폼 이벤트 리스너 등록
+    e.preventDefault(); //submit시 기본적으로 새로고침하려고 해서
+    const todoText = input.value.trim();
+    if(!todoText) return;
+
+    const li = document.createElement("li");
+    li.textContent =  todoText;
+
+    toDoList?.appendChild(li);
+    input.value = ""; // 입력창 비우기
+});
