@@ -33,4 +33,12 @@ form.addEventListener("submit",(e)=>{ //폼 이벤트 리스너 등록
 
     toDoList?.appendChild(li);
     input.value = ""; // 입력창 비우기
+
+    doneBtn.addEventListener("click",()=>{ //굳이 e로 객체 찾아올 필요 X
+        doneList?.appendChild(li);
+    
+    })
+    deleteBtn.addEventListener("click",()=>{
+        li.remove();
+    })
 });
