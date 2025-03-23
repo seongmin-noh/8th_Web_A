@@ -71,9 +71,23 @@ main { /*위치 조정 필요*/
   margin:0;  /*기본 마진 제거*/
 }
 
-.render-container__item-button{
+li span{
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.render-container__item-done-button{
   background: green;
   color: white;
   border: none; 
   border-radius: 6px;
+}
+
+.render-container__item-delete-button{
+  background: red;
+  color: white;
+  border: none; 
+  border-radius: 6px;
+  
 }
