@@ -42,7 +42,7 @@ form.addEventListener("submit",(e)=>{
 
     //삭제 버튼 기능
     deleteBtn.addEventListener("click",()=>{
-        li.remove();
+        doneLi.remove();
     });
 });
 });
