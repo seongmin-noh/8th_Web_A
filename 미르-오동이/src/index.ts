@@ -4,7 +4,7 @@ const toDoList = document.getElementById("todo-list");
 const doneList = document.getElementById("done-list");
 
 form.addEventListener("submit",(e)=>{ 
-    e.preventDefault(); // 기본 동작(새로고침) 방지지
+    e.preventDefault(); // 기본 동작(새로고침) 방지
     
     const todoText = input.value.trim();
     if(!todoText) return;
@@ -18,7 +18,7 @@ form.addEventListener("submit",(e)=>{
     doneBtn.textContent = "완료"; 
     doneBtn.className = "render-container__item-done-button"; //css 클래스 부여
 
-    //li에 텍스트&버튼 추가가
+    //li에 텍스트&버튼 추가
     li.appendChild(span);
     li.appendChild(doneBtn);
     toDoList?.appendChild(li);
@@ -38,7 +38,7 @@ form.addEventListener("submit",(e)=>{
         doneLi.appendChild(deleteBtn);
         doneList?.appendChild(doneLi);
       
-        li.remove(); //기존 할 일에서 삭제제   
+        li.remove(); //기존 할 일에서 삭제
 
     //삭제 버튼 기능
     deleteBtn.addEventListener("click",()=>{
